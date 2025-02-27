@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Sergyi\\Desktop\\site\\DailyEasy\\DailyEasy\\DailyEasy\\DailyEasy.csproj": {}
+    "C:\\Users\\Sergyi\\Desktop\\DailyEasy\\DailyEasy\\DailyEasy.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Sergyi\\Desktop\\site\\DailyEasy\\DailyEasy\\DailyEasy\\DailyEasy.csproj": {
+    "C:\\Users\\Sergyi\\Desktop\\DailyEasy\\DailyEasy\\DailyEasy.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Sergyi\\Desktop\\site\\DailyEasy\\DailyEasy\\DailyEasy\\DailyEasy.csproj",
+        "projectUniqueName": "C:\\Users\\Sergyi\\Desktop\\DailyEasy\\DailyEasy\\DailyEasy.csproj",
         "projectName": "DailyEasy",
-        "projectPath": "C:\\Users\\Sergyi\\Desktop\\site\\DailyEasy\\DailyEasy\\DailyEasy\\DailyEasy.csproj",
+        "projectPath": "C:\\Users\\Sergyi\\Desktop\\DailyEasy\\DailyEasy\\DailyEasy.csproj",
         "packagesPath": "C:\\Users\\Sergyi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Sergyi\\Desktop\\site\\DailyEasy\\DailyEasy\\DailyEasy\\obj\\",
+        "outputPath": "C:\\Users\\Sergyi\\Desktop\\DailyEasy\\DailyEasy\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

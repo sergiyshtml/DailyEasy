@@ -1,5 +1,5 @@
 ﻿<!DOCTYPE html>
-<html lang="en">
+<html lang="ua">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,44 +7,105 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/DailyEasy.styles.css" asp-append-version="true" />
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css" rel="stylesheet">
 </head>
-<body>
-    <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+<body style="font-family: Open Sans, serif;" class="d-flex flex-column min-vh-100">
+    <header class="table-nav">
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark bg-dark border-bottom box-shadow mb-3">
             <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">DailyEasy</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between w-100">
+                    <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="News">News</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Delivery">Delivery</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                            <a class="nav-link" href="https://www.instagram.com/daily.easy.shop?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">
+                                <img src="~/Image/free-icon-instagram-18522004.png" alt="Instagram" width="40" height="40">
+                            </a>
                         </li>
                     </ul>
-                    <partial name="_LoginPartial" />
+                    <ul class="navbar-nav flex-grow-1 justify-content-center w-100">
+                        <li class="nav-item flex-fill">
+                            <a class="nav-link text-light text-center" asp-area="" asp-controller="Home" asp-action="Compani">Про Магазин</a>
+                        </li>
+                        <li class="nav-item flex-fill">
+                            <a class="nav-link text-light text-center" asp-area="" asp-controller="Home" asp-action="News">Подарункові сертифікати</a>
+                        </li>
+                        <li class="nav-item flex-fill">
+                            <a class="nav-link text-light text-center" asp-area="" asp-controller="Home" asp-action="Sell">Акції & Новинки</a>
+                        </li>
+                        <li class="nav-item flex-fill">
+                            <a class="nav-link text-light text-center" asp-area="" asp-controller="Home" asp-action="News">Блог</a>
+                        </li>
+                        <li class="nav-item flex-fill">
+                            <a class="nav-link text-light text-center" asp-area="" asp-controller="Home" asp-action="News">News</a>
+                        </li>
+                        <li class="nav-item flex-fill">
+                            <a class="nav-link text-light text-center" asp-area="" asp-controller="Home" asp-action="Delivery">Доставка і Оплата</a>
+                        </li>
+                    </ul>
+                    
                 </div>
             </div>
         </nav>
+        <div class="container">
+            <div class="row justify-content-start">
+                <div class="col-12 col-md-4">
+                    <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2 w-50" type="search" placeholder="Пошук по каталогу" aria-label="Search">
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit"></button>
+                    </form>
+                </div>
+                <div class="col-12 col-md-4 d-flex justify-content-center">
+                    <a class="banner justify-content-center" asp-area="" asp-controller="Home" asp-action="Index">
+                        <img src="/image/logo.png" width="75%" alt="png" />
+                    </a>
+                </div>
+            </div>
+            <div class="d-flex justify-content-end align-items-finish">
+                <a class="nav-link" href="~/Shared/_loginPat" title="Login">
+                    <img src="~/Image/pngwing.com.png" alt="Login" width="30" height="30">
+                </a>
+                <a class="nav-link" href="#" title="Cart">
+                    <img src="~/Image/free-icon-shopping-bag-4903482.png" alt="Cart" width="30" height="30">
+                </a>
+            </div>
+        </div>
+        <header class="table-nav">
+            <nav class="w-100">
+                <div class="w-100">
+                    <ul class="nav justify-content-center w-100" style="font-size: 1.2rem;">
+                        <li class="nav-item flex-fill">
+                            <a class="nav-link text-dark text-center" asp-area="" asp-controller="Tabs" asp-action="Leggings">Легінси</a>
+                        </li>
+                        <li class="nav-item flex-fill">
+                            <a class="nav-link text-dark text-center" asp-area="" asp-controller="Tabs" asp-action="CyclingShorts">Велосипедки</a>
+                        </li>
+                        <li class="nav-item flex-fill">
+                            <a class="nav-link text-dark text-center" asp-area="" asp-controller="Tabs" asp-action="Longs">Лонги</a>
+                        </li>
+                        <li class="nav-item flex-fill">
+                            <a class="nav-link text-dark text-center" asp-area="" asp-controller="Tabs" asp-action="Tops">Топи</a>
+                        </li>
+                        <li class="nav-item flex-fill">
+                            <a class="nav-link text-dark text-center" asp-area="" asp-controller="Tabs" asp-action="Jumpsuits">Комбінезони</a>
+                        </li>
+                        <li class="nav-item flex-fill">
+                            <a class="nav-link text-dark text-center" asp-area="" asp-controller="Tabs" asp-action="Shirts">Сорочки</a>
+                        </li>
+                        <li class="nav-item flex-fill">
+                            <a class="nav-link text-dark text-center" asp-area="" asp-controller="Tabs" asp-action="Underwear">Білизна</a>
+                        </li>
+                    </ul>
+                    <hr />
+                </div>
+            </nav>
+        </header>
     </header>
-    <div class="container">
+    <div class="container flex-grow-1">
         <main role="main" class="pb-3">
             @RenderBody()
         </main>
     </div>
-
-    <footer class="border-top footer text-muted">
-        <div class="container">
+    <footer class="border-top footer text-muted mt-auto">
+        <div class="container nav">
             &copy; 2025 - DailyEasy - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
         </div>
     </footer>

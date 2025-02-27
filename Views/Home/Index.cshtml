@@ -1,5 +1,85 @@
-﻿<link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+﻿@page "Index"
 
-<div class="banner" >
-	<img  src="/image/logo.png" width="50%" margin="auto" alt="png"/>
+<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" style="width: 100vw; margin-left: calc(-50vw + 50%);">
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="~/Image/banner1.jpg" class="d-block" alt="...">
+        </div>
+        <div class="carousel-item">
+            <img src="~/Image/banner2.jpg" class="d-block" alt="...">
+        </div>
+        <div class="carousel-item">
+            <img src="~/Image/ner3.jpg" class="d-block" alt="...">
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden"></span>
+    </button>
+</div>
+
+
+
+<div>
+    <hr />
+</div>
+<div class="infoDiv imgDivInfo">
+    <div style="background-image: url('image\adbanner1.jpg'); width: 30%;">
+        <h4>basic</h4>
+        <br>
+        <p>інформація</p>
+    </div>
+	<div style="background-image: url('image\adbanner2.jpg'); width: 448px;">
+        <h4>basic</h4>
+        <br>
+        <p>інформація</p>
+    </div>
+	<div style="background-image: url('image\adbanner3.jpg'); width: 360px;">
+        <h4>basic</h4>
+        <br>
+        <p>інформація</p>
+    </div>
+    <div style="background-image: url(img/adBanner4.jpg); width: 92%; height: 200px;padding-top: 200px;    padding-bottom: 100px; margin-left: auto; margin-right: auto;">
+        </div>
+    <div style="background-image: url(img/adBanner5.jpg); width: 25%;">
+        <h4>basic</h4>
+        <br>
+        <p>інформація</p>
+    </div>
+    <div style="background-image: url(img/adBanner6.jpg); width: 25%;">
+        <h4>basic</h4>
+        <br>
+        <p>інформація</p>
+    </div>
+    <div style="background-image: url(img/adBanner7.jpg); width: 551px; ">
+        <h4>basic</h4>
+        <br>
+        <p>інформація</p>
+    </div>
+</div>
+<div class="infoDiv">
+    <h5>Спокуслива жіноча білизна</h5>
+    <p>Чи знаєте ви, скільки у вас білизни? Чи давно проводили її ревізію? І чи впевнені, що забезпечені нею на всі випадки життя? Ніхто й ніщо настільки близько – до того ж щодня! – не супроводжує леді, як жіноча білизна. Якісна та красива, вона здатна подарувати своїй власниці відчуття впевненості й задоволеності собою.</p>
+    <p>Що вже говорити про важливість цієї деталі гардероба, якщо ви збираєтесь причарувати представників протилежної статі або ж порадувати свою половинку? У таких випадках купити жіночу білизну, що вабить і спокушає (сексуальні боді) – взагалі ваше першочергове завдання!</p>
+    <p>Отже, все, що втратило насиченість кольору, розтяглося або просто набридло, – викидаємо без жалю! Вирушаємо за модним, сексуальним і вишуканим! На нашому сайті представлена якісна нижня білизна гуртом від виробника. </p>
+    <h5>«DailyEasy» – жіноча білизна №1 в Україні</h5>
+    <p>Щоб бути задоволеною придбанням, треба зробити правильний вибір. І в цьому вам допоможе компанія «DailyEasy» – магазин жіночої білизни від українського виробника. Тут для вас підберуть образ з урахуванням всіх ваших потреб і особливостей. Наприклад, у вас:</p>
+    <ul>
+        <li>дуже ніжна шкіра, схильна до подразнень? А наші вироби виготовляються лише з найкращих тканин, що поставляються безпосередньо з Європи;</li>
+        <li>не модельна фігура, і вам важко знайти в Україні красиву жіночу білизну? Ласкаво просимо до нас! зібрано десятки моделей різних фасонів, конструкцій та розмірів (наприклад, трусиків – до 4 XL, бюстгальтерів – до чашечки G), у тому числі й для нестандартних типів грудей - близько та широко посаджених. А ще ми враховуємо потреби пані будь-якого віку;</li>
+        <li>на даний момент не дуже сприятливі фінансові можливості? Можемо вас потішити: в нашому магазині жіночої білизни приваблює не тільки вишукана жіноча білизна, а й ціна, адже ми продаємо те, що самі виробляємо. До того ж, на деякі товари – а їх багато! – діють знижки 40%;</li>
+        <li>в гардеробі недостатньо натільного одягу? А у нас – сотні найменувань та забарвлень! І якщо ви розгубитесь від цього розмаїття, наші професійні бра-фіттери допоможуть визначитися і з розміром, і з фасоном;</li>
+        <li>немає бажання або можливості їхати купувати білизну для жінок в один з наших шоу-румів? Немає проблем! Ласкаво просимо в «DailyEasy» – магазин білизни! У нас ви зможете купити гуртом нижню білизну від виробника.</li>
+    </ul>
+    <p>Наша компанія, як виробник спідньої білизни для жінок, знає, що буде в тренді завтра: ми вивчаємо напрями світової моди, розробляємо власні моделі, адаптуючи їх для українських модниць, і щомісяця презентуємо нові колекції. І нехай на весь процес витрачаємо багато часу, це того варте: білизна DailyEasy сьогодні – одна з найбільш затребуваних серед українок</p>
+    <p>А ще ми пишаємося тим, що зручну й гарну білизну для дівчат виготовляємо саме в Україні.</p>
 </div>

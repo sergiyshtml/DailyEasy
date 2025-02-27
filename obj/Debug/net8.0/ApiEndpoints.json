@@ -1,1 +1,119 @@
-[]
+[
+  {
+    "ContainingType": "DailyEasy.Controllers.LeggingsController",
+    "Method": "Upload",
+    "RelativePath": "api/Leggings/upload",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Name",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Price",
+        "Type": "System.Double",
+        "IsRequired": false
+      },
+      {
+        "Name": "CategoriID",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Categori.Id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Categori.Name",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Categori.Leggings",
+        "Type": "System.Collections.Generic.ICollection\u00601[[DailyEasy.Models.Legging, DailyEasy, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "ColorID",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Color.Id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Color.Color",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Color.Leggings",
+        "Type": "System.Collections.Generic.ICollection\u00601[[DailyEasy.Models.Legging, DailyEasy, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "SizeID",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Size.Id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Size.Size",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Size.Leggings",
+        "Type": "System.Collections.Generic.ICollection\u00601[[DailyEasy.Models.Legging, DailyEasy, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "Photos",
+        "Type": "System.Collections.Generic.ICollection\u00601[[DailyEasy.Models.Photo, DailyEasy, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "files",
+        "Type": "System.Collections.Generic.List\u00601[[Microsoft.AspNetCore.Http.IFormFile, Microsoft.AspNetCore.Http.Features, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60]]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DailyEasy.Controllers.PhotosController",
+    "Method": "Upload",
+    "RelativePath": "api/Photos/upload/{leggingId}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "leggingId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "files",
+        "Type": "System.Collections.Generic.List\u00601[[Microsoft.AspNetCore.Http.IFormFile, Microsoft.AspNetCore.Http.Features, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60]]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

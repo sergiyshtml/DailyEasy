@@ -15,15 +15,564 @@ html {
   box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
 }
 
-html {
-  position: relative;
-  min-height: 100%;
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
-body {
-  margin-bottom: 60px;
+main {
+    flex: 1;
+    padding-bottom: 60px; 
+}
+
+footer {
+    height: 60px; 
 }
 
 .banner {
-    margin: auto;
+    width: auto;
+    position: center;
 }
+
+.nav-link:hover {
+    color: #004F3B; /* Change this to the color you want */
+}
+.nav-link {
+    font-size: 1.4rem; /* Increase the font size */
+    padding-left: 5px; /* Reduce left padding */
+    padding-right: 5px; /* Reduce right padding */
+}
+
+.footer {
+    background-color: #000; /* Change background color to black */
+    color: #fff; /* Change text color to white */
+    padding: 20px 0;
+}
+
+    .footer h5 {
+        font-size: 1.25rem;
+        margin-bottom: 1rem;
+    }
+
+    .footer p {
+        margin-bottom: 0.5rem;
+    }
+
+    .footer .input-group {
+        max-width: 400px;
+    }
+
+        .footer .input-group .form-control {
+            border-radius: 0;
+        }
+
+        .footer .input-group .btn {
+            border-radius: 0;
+        }
+
+    .footer a {
+        color: #fff; /* Change link color to white */
+    }
+
+        .footer a:hover {
+            color: #ccc; /* Change link hover color to light gray */
+        }
+
+
+
+.navbar-1 {
+    width:0;
+    flex-direction: column;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    transition: 1s;
+}
+
+
+#bannerTop {
+    background-color: black;
+    padding: 10px 0;
+}
+
+#leftDivInBanner {
+    display: inline-block;
+    width: 20%;
+    vertical-align: middle;
+    padding-left: 5%;
+}
+
+#centerDivInBanner {
+    margin: auto;
+    display: inline-block;
+    width: 50%;
+    vertical-align: middle;
+    text-align: center;
+}
+
+#rightDivInBanner {
+    display: inline-block;
+    width: 24%;
+    vertical-align: middle;
+}
+
+#centerDivInBanner a {
+    margin: 0 30px;
+    display: inline-block;
+    font-size: 25px;
+    color: white;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+    #centerDivInBanner a:hover {
+        color: rgb(233, 183, 123);
+    }
+
+#logoDIv {
+}
+
+#searchDiv {
+    width: 20%;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#imgInLogoDiv {
+    width: 15%;
+    vertical-align: middle;
+    margin: 40px 22%;
+}
+
+#rightDivInLogo {
+    width: 20%;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.leftDiv {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.imgInLogoSmall {
+    width: 30px;
+    vertical-align: middle;
+}
+
+.aField {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+    .aField a {
+        color: black;
+        text-decoration: none;
+        font-size: 20px;
+        margin: 0 20px;
+    }
+
+
+
+#mainDiv {
+    margin: auto;
+    width: 70%;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.adImg {
+    width: 300px;
+    margin-bottom: 10px;
+}
+
+.infoDiv {
+    text-align: center;
+}
+
+    .infoDiv li {
+        font-size: 18px;
+        line-height: 180%;
+        margin: 10px 0;
+        text-align: left;
+    }
+
+    .infoDiv ul {
+        margin: 30px 0;
+    }
+
+.imgDivInfo div {
+    background-size: cover;
+    display: inline-block;
+    height: 100px;
+    padding-top: 300px;
+    margin: 10px 3px;
+    background-repeat: no-repeat;
+    transition: 1s;
+    text-align: left;
+    vertical-align: top;
+    opacity: 0.8;
+}
+
+.imgDivInfo p {
+    display: inline-block;
+    margin-left: 50px;
+    color: white;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.205);
+}
+
+.imgDivInfo h4 {
+    display: inline-block;
+    margin-left: 50px;
+    color: white;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.226);
+}
+
+
+.imgDivInfo div:hover {
+    opacity: 1;
+    cursor: pointer;
+    height: 200px;
+    padding-top: 200px;
+}
+
+.bottomBaner {
+    width: 60%;
+    text-align: center;
+    padding: 40px 20%;
+    background-color: black;
+    margin-top: 50px;
+}
+
+#leftDivInBottomBaner {
+    display: inline-block;
+    text-align: left;
+    width: 20%;
+    vertical-align: middle;
+}
+
+.bottomBaner a {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    text-align: left;
+    margin: 10px 0;
+}
+
+.bottomBaner p {
+    color: white;
+    text-align: left;
+}
+
+#centerDivInBottomBaner {
+    display: inline-block;
+    width: 79%;
+    vertical-align: middle;
+}
+
+#rightDivInBottomBaner {
+    display: inline-block;
+    width: 20%;
+    vertical-align: middle;
+}
+
+#emailDiv {
+    text-align: left;
+    display: inline-block;
+    width: 30%;
+}
+
+    #emailDiv p {
+        margin: 5px 0;
+    }
+
+    #emailDiv input {
+        background-color: rgb(43, 43, 43);
+        border: 0px white solid;
+        padding: 2px;
+        color: white;
+    }
+
+#centerDivInBottomBaner a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.infoDivBottomBaner {
+    display: inline-block;
+    width: 12%;
+    margin: 0 10px;
+    vertical-align: top;
+}
+
+    .infoDivBottomBaner p {
+        font-size: 12px;
+    }
+
+    .infoDivBottomBaner img {
+        width: 30px;
+        margin-right: 4px;
+        filter: brightness(0) invert(1);
+        float: left;
+    }
+
+
+.imgLogo {
+    width: 30px;
+    filter: brightness(0) invert(1);
+    margin: 10px 8px;
+}
+
+    .imgLogo:hover {
+        filter: brightness(0) invert(1) sepia(1) saturate(500%) hue-rotate(150deg) brightness(0.4);
+        cursor: pointer;
+    }
+
+h5 {
+    margin: 15px 0;
+    margin-top: 50px;
+    margin-left: 30px;
+    font-size: 28px;
+    text-align: left;
+}
+
+.infoDiv p {
+    line-height: 180%;
+    font-size: 18px;
+    text-indent: 30px;
+    text-align: justify;
+    margin: 10px 0;
+}
+
+.leftDiv a {
+    color: black;
+    text-decoration: none;
+}
+
+a {
+    transition: 0.5s;
+    padding: 1px;
+}
+
+    a:hover {
+        color: rgb(233, 183, 123);
+    }
+
+.choosed {
+    border-bottom: 1px black solid;
+}
+
+.towar {
+    width: 20%;
+    margin: 20px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+    .towar img {
+        width: 100%;
+        margin-bottom: 20px;
+        transition: 0.5s;
+    }
+
+        .towar img:hover {
+            scale: 1.1;
+        }
+
+h1 {
+    margin-bottom: 40px;
+    padding: 4px 0;
+    border-bottom: 1px black solid;
+    border-top: 1px black solid;
+}
+
+.choosedMain {
+    border-bottom: 1px white solid;
+}
+
+.informationP {
+    line-height: 180%;
+    text-align: justify;
+    text-indent: 30px;
+    font-size: 20px;
+}
+
+#akciiDiv .towar {
+}
+
+    #akciiDiv .towar img {
+        height: 300px;
+    }
+
+.infoDiv {
+    text-align: center;
+}
+
+    .infoDiv li {
+        font-size: 18px;
+        line-height: 180%;
+        margin: 10px 0;
+        text-align: left;
+    }
+
+    .infoDiv ul {
+        margin: 30px 0;
+    }
+
+.imgDivInfo div {
+    background-size: cover;
+    display: inline-block;
+    height: 100px;
+    padding-top: 300px;
+    margin: 10px 3px;
+    background-repeat: no-repeat;
+    transition: 1s;
+    text-align: left;
+    vertical-align: top;
+    opacity: 0.8;
+}
+
+.imgDivInfo p {
+    display: inline-block;
+    margin-left: 50px;
+    color: white;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.205);
+}
+
+.imgDivInfo h4 {
+    display: inline-block;
+    margin-left: 50px;
+    color: white;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.226);
+}
+
+
+.imgDivInfo div:hover {
+    opacity: 1;
+    cursor: pointer;
+    height: 200px;
+    padding-top: 200px;
+}
+.carousel-item img {
+    width: auto;
+    max-width: 100%;
+    height: 50%;
+    margin: 0 auto;
+}
+
+
+/* wwwroot/css/site.css */
+.custom-row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.custom-col {
+    flex: 1 1 100%;
+}
+
+.custom-card {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.custom-img {
+    max-width: 40%;
+    max-height: 300px; /* Adjust the height as needed */
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+}
+
+.custom-card-body {
+    padding: 15px;
+}
+
+.custom-card-title {
+    font-size: 1.25rem;
+    margin-bottom: 0.75rem;
+}
+
+.custom-card-text {
+    margin-bottom: 0.5rem;
+}
+
+/* wwwroot/css/site.css */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.product-images {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.product-image-large {
+    width: 100%;
+    height: auto;
+}
+
+.small-images {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.product-image-small {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+}
+
+.product-details {
+    flex: 1;
+}
+
+.product-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.product-price {
+    font-size: 20px;
+    color: #e74c3c;
+    margin-bottom: 10px;
+}
+
+.size-options, .color-options, .quantity-container {
+    margin-bottom: 10px;
+}
+
+.size-button, .color-button, .quantity-button, .add-to-cart {
+    padding: 10px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.related-products {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.related-product {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+

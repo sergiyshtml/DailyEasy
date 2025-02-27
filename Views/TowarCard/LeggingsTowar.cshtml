@@ -1,0 +1,44 @@
+﻿@model DailyEasy.Models.Legging
+@using System.Linq
+
+<div class="container">
+    <div class="product-images">
+        @if (Model.Photos != null && Model.Photos.Any())
+        {
+            <img src="@Model.Photos.First().Url" alt="@Model.Name" class="product-image-large">
+            <div class="small-images">
+                @foreach (var photo in Model.Photos)
+                {
+                    <img src="@photo.Url" alt="@Model.Name" class="product-image-small">
+                }
+            </div>
+        }
+    </div>
+    <div class="product-details">
+        <h1 class="product-title">@Model.Name</h1>
+        <p class="product-price">₴@Model.Price</p>
+        <p>Категорія: @Model.Categori.Name</p>
+        <p>Колір: @Model.Color.Color</p>
+
+        <div class="size-options">
+            <span>Розмір: </span>
+            <button class="size-button">@Model.Size.Size</button>
+        </div>
+
+        <div class="quantity-container">
+            <button class="quantity-button">-</button>
+            <input type="number" class="quantity-input" value="1" min="1">
+            <button class="quantity-button">+</button>
+        </div>
+
+        <button class="add-to-cart">Обрати розмір</button>
+
+        <div class="related-products">
+            <!-- Placeholder for related products -->
+            <img src="path/to/related-product1.jpg" alt="Суміжний продукт 1" class="related-product">
+            <img src="path/to/related-product2.jpg" alt="Суміжний продукт 2" class="related-product">
+            <img src="path/to/related-product3.jpg" alt="Суміжний продукт 3" class="related-product">
+        </div>
+    </div>
+</div>
+

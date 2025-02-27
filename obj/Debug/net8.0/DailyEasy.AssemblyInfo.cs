@@ -16,7 +16,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DailyEasy")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+21579bdcde2531182f6eb79dbd4b78d96a5d1e78")]
 [assembly: System.Reflection.AssemblyProductAttribute("DailyEasy")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DailyEasy")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
